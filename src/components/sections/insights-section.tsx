@@ -5,24 +5,24 @@ import { ArrowRight } from "lucide-react"
 
 const articles = [
   {
-    title: "Искусство визуального сторителлинга",
-    category: "Дизайн",
-    image: "/visual-storytelling-design-article.jpg",
+    title: "Как разобрать гардероб за один день",
+    category: "Советы стилиста",
+    image: "https://cdn.poehali.dev/projects/b5a35f89-2c37-4ab2-9758-da7eed435936/files/0a0539e4-d294-44b4-b654-1aeb62175a42.jpg",
   },
   {
-    title: "Как создать личный бренд онлайн",
-    category: "Стратегия",
-    image: "/personal-branding-digital-marketing.jpg",
+    title: "5 вещей, которые нужны каждой женщине",
+    category: "Базовый гардероб",
+    image: "https://cdn.poehali.dev/projects/b5a35f89-2c37-4ab2-9758-da7eed435936/files/a872138b-4c65-441d-9bc5-3e6ea6678a6d.jpg",
   },
   {
-    title: "Тренды типографики 2025",
-    category: "Типографика",
-    image: "/typography-trends-modern-fonts.jpg",
+    title: "Шопинг без стресса: как выбирать одежду осознанно",
+    category: "Шопинг",
+    image: "https://cdn.poehali.dev/projects/b5a35f89-2c37-4ab2-9758-da7eed435936/files/20e63985-915f-4795-9221-1e27cbd64196.jpg",
   },
   {
-    title: "Минимализм в дизайне портфолио",
-    category: "Вдохновение",
-    image: "/placeholder.svg?height=200&width=300",
+    title: "Цветотип и как он влияет на ваш образ",
+    category: "Стиль",
+    image: "https://cdn.poehali.dev/projects/b5a35f89-2c37-4ab2-9758-da7eed435936/files/0a0539e4-d294-44b4-b654-1aeb62175a42.jpg",
   },
 ]
 
@@ -43,7 +43,7 @@ export function InsightsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Статьи
+          Блог стилиста
         </motion.p>
 
         <div className="divide-y divide-border">
@@ -72,7 +72,6 @@ export function InsightsSection() {
           ))}
         </div>
 
-        {/* Floating hover image */}
         <AnimatePresence>
           {hoveredIndex !== null && (
             <motion.div
@@ -88,7 +87,7 @@ export function InsightsSection() {
               transition={{ duration: 0.2 }}
             >
               <img
-                src={articles[hoveredIndex].image || "/placeholder.svg"}
+                src={articles[hoveredIndex].image}
                 alt={articles[hoveredIndex].title}
                 className="w-full h-auto"
               />

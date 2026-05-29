@@ -2,9 +2,9 @@ import { useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 
 const images = [
-  "/minimal-architecture-portfolio-with-clean-lines.jpg",
-  "/fashion-photography-editorial-black-and-white.jpg",
-  "/modern-ui-design-portfolio-mockup.jpg",
+  "https://cdn.poehali.dev/projects/b5a35f89-2c37-4ab2-9758-da7eed435936/files/a872138b-4c65-441d-9bc5-3e6ea6678a6d.jpg",
+  "https://cdn.poehali.dev/projects/b5a35f89-2c37-4ab2-9758-da7eed435936/files/0a0539e4-d294-44b4-b654-1aeb62175a42.jpg",
+  "https://cdn.poehali.dev/projects/b5a35f89-2c37-4ab2-9758-da7eed435936/files/20e63985-915f-4795-9221-1e27cbd64196.jpg",
 ]
 
 export function HeroSection() {
@@ -36,8 +36,8 @@ export function HeroSection() {
           transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
         >
           <img
-            src={images[0] || "/placeholder.svg"}
-            alt="Портфолио 1"
+            src={images[0]}
+            alt="Стилист за работой"
             className="w-full h-full object-cover"
           />
         </motion.div>
@@ -50,8 +50,8 @@ export function HeroSection() {
           transition={{ duration: 1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
         >
           <img
-            src={images[1] || "/placeholder.svg"}
-            alt="Портфолио 2"
+            src={images[1]}
+            alt="Разбор гардероба"
             className="w-full h-full object-cover"
           />
         </motion.div>
@@ -64,8 +64,8 @@ export function HeroSection() {
           transition={{ duration: 1, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
           <img
-            src={images[2] || "/placeholder.svg"}
-            alt="Портфолио 3"
+            src={images[2]}
+            alt="Шопинг сопровождение"
             className="w-full h-full object-cover"
           />
         </motion.div>
@@ -78,7 +78,7 @@ export function HeroSection() {
         transition={{ duration: 1, delay: 0.8 }}
       >
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-center text-foreground mix-blend-difference">
-          Ваши работы, <em className="italic">в фокусе</em>.
+          Подарок, который <em className="italic">меняет стиль</em>.
         </h1>
       </motion.div>
 

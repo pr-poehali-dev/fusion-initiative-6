@@ -3,18 +3,31 @@ import { Check } from "lucide-react"
 
 const plans = [
   {
-    name: "Старт",
-    price: "1 200",
-    period: " руб/мес",
-    description: "Для личного портфолио",
-    features: ["5 страниц", "Свой домен", "Базовая аналитика", "Поддержка по email"],
+    name: "Гардероб",
+    price: "8 000",
+    period: " ₽",
+    description: "Разбор и аудит гардероба",
+    features: [
+      "Онлайн или офлайн консультация",
+      "Анализ текущего гардероба",
+      "Рекомендации по сочетаниям",
+      "Список базовых вещей",
+      "Итоговый PDF-гайд",
+    ],
   },
   {
-    name: "Про",
-    price: "2 900",
-    period: " руб/мес",
-    description: "Для растущих авторов",
-    features: ["Безлимит страниц", "Приоритет поддержки", "Расширенная аналитика", "Свой брендинг", "Работа в команде"],
+    name: "Шопинг",
+    price: "15 000",
+    period: " ₽",
+    description: "Полное шопинг сопровождение",
+    features: [
+      "Разбор гардероба включён",
+      "3 часа шопинга со стилистом",
+      "Подбор образов под ваш тип",
+      "Выбор в 3–5 магазинах",
+      "Сборка готовых луков",
+      "Поддержка 2 недели после",
+    ],
     popular: true,
   },
 ]
@@ -29,8 +42,8 @@ export function PricingSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-5xl font-serif text-foreground">Простые и понятные цены</h2>
-          <p className="text-muted-foreground mt-4 max-w-md mx-auto">Начните бесплатно, платите когда готовы.</p>
+          <h2 className="text-3xl md:text-5xl font-serif text-foreground">Выберите свой сертификат</h2>
+          <p className="text-muted-foreground mt-4 max-w-md mx-auto">Подарите себе или близкому человеку новый взгляд на стиль.</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
@@ -75,7 +88,7 @@ export function PricingSection() {
                     : "bg-secondary text-foreground hover:bg-accent/30"
                 }`}
               >
-                Начать
+                Получить сертификат
               </button>
             </motion.div>
           ))}
